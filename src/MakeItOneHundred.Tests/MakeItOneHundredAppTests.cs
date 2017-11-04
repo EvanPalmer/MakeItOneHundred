@@ -9,7 +9,7 @@ namespace MakeItOneHundred.Tests
     public class MakeItOneHundredTests
     {
         [Fact]
-        public void Test1()
+        public void App_WritesToOutput()
         {
             // Arrange
             var outputWriter = new Mock<IOutputWriter>();

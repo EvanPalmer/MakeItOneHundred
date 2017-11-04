@@ -3,7 +3,11 @@ using MakeItOneHundred.Acess;
 
 namespace MakeItOneHundred
 {
-    public class MakeItOneHundredApp
+    public interface IMakeItOneHundredApp
+    {
+        void Run();
+    }
+    public class MakeItOneHundredApp : IMakeItOneHundredApp
     {
         private readonly IOutputWriter outputWriter;
         public MakeItOneHundredApp(IOutputWriter outputWriter = null)
